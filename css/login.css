@@ -1,0 +1,424 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@font-face {
+  font-family: "circular std";
+  src: url(font/circular-std-medium-500.ttf);
+}
+body {
+  letter-spacing: -0.05em;
+  font-size: 15px;
+  font-family: "circular std", "Noto Sans KR", sans-serif;
+}
+.inner {
+  width: 1280px;
+  margin: auto;
+}
+.ft_Noto {
+  font-family: "Noto Sans";
+}
+.ft_Source_Il {
+  font-family: "Source Serif 4";
+  font-style: italic;
+}
+.ft16px_202020 {
+  font-size: 16px;
+  color: #202020;
+}
+.color_Dc272d {
+  color: #dc272d;
+}
+.color_009be4 {
+  color: #009be4;
+}
+.color_231f20 {
+  font-weight: 500;
+  color: #231f20;
+}
+.a_btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 60px;
+  color: #fff;
+  border-radius: 26px;
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105px;
+  padding: 0 52px;
+}
+header .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 196px;
+  height: 36px;
+}
+nav {
+  float: left;
+  color: #df5054;
+}
+header ul li {
+  float: left;
+  line-height: 105px;
+}
+nav li {
+  padding-right: 41px;
+  font-size: 18px;
+}
+nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.icon {
+  float: right;
+}
+.icon li {
+  position: relative;
+  margin-left: 27px;
+}
+.icon li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #dc272d;
+  width: 0%;
+  height: 2px;
+  transition: 0.2s;
+}
+.icon li:hover:after {
+  width: 100%;
+}
+.icon li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.icon li button {
+  height: 100%;
+  cursor: pointer;
+  background: none;
+}
+.icon li:nth-child(3) {
+  position: relative;
+}
+.icon li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #dc272d;
+  width: 100%;
+  height: 2px;
+  transition: 0.2s;
+}
+.icon li:last-child img {
+  margin-right: 16px;
+}
+.icon li:last-child a {
+  position: relative;
+  color: #fff;
+}
+.icon li:last-child .btn::after {
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -9px;
+  top: 40px;
+  width: 26px;
+  height: 26px;
+  background: #dc272d;
+  border-radius: 50%;
+}
+main {
+  width: 100%;
+  padding: 150px 0;
+  text-align: center;
+  background: #f1f9ff;
+}
+form {
+  width: 530px;
+  margin: auto;
+  padding: 60px 50px;
+  background: #fff;
+  border-radius: 20px;
+}
+form > h2 {
+  font-size: 27px;
+  padding-bottom: 40px;
+}
+form p:nth-child(3) {
+  height: 65px;
+  margin: 28px 0 21px;
+  background: #fee500;
+  border-radius: 10px;
+  line-height: 65px;
+}
+form p:nth-child(3) a {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+form p:nth-child(3) a::before {
+  position: absolute;
+  left: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  background: url(https://tocobo.co.kr/wib/img/kakako.svg);
+  width: 20px;
+  height: 17px;
+}
+form .giftBox li {
+  position: relative;
+  float: left;
+  width: 210px;
+  height: 117px;
+  padding-top: 60px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  font-size: 14px;
+}
+form .giftBox li ~ li {
+  margin-left: 10px;
+}
+form .giftBox li > span::before {
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../img/a0fdc82e0cb5b10f14466a16da6abfd1.png) no-repeat 0 0 /
+    cover;
+}
+form .Id {
+  margin: 21px 0 13px;
+}
+form .Id input,
+form .Pw input {
+  display: block;
+  width: 430px;
+  height: 50px;
+  margin: auto;
+  padding: 10px 15px;
+  background: #f1f9ff;
+  border: none;
+  border-radius: 5px;
+}
+.search_Text li {
+  float: left;
+  margin: 17px 0 30px;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.search_Text li:nth-child(3) {
+  float: right;
+}
+.search_Text .bar {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.search_Text .bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 13px;
+  background: #ddd;
+  right: 0;
+}
+.login_btn li {
+  float: left;
+  width: 210px;
+  height: 55px;
+  text-align: center;
+}
+.login_btn li ~ li {
+  margin-left: 10px;
+}
+.login_btn input,
+.login_btn li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.login_btn input {
+  background: #dc272d;
+  border: none;
+}
+.login_btn li a {
+  border: 1px solid #dc272d;
+  line-height: 55px;
+}
+.line {
+  position: relative;
+  margin: 20px 0;
+  font-size: 12px;
+  color: #9c9c9c;
+}
+.line span::before {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 195px;
+  height: 1px;
+  background: #9c9c9c;
+}
+.line span::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 195px;
+  height: 1px;
+  background: #9c9c9c;
+}
+.snslink {
+  padding-left: 150px;
+}
+.snslink li {
+  float: left;
+  margin-right: 20px;
+}
+.snslink li a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: #009be4;
+  border-radius: 50%;
+}
+.snslink li:first-child a {
+  padding-top: 18px;
+}
+.snslink li:last-child a {
+  padding-top: 20px;
+  background: #2bb500;
+}
+.snslink li a img {
+  display: block;
+  margin: auto;
+  width: 9px;
+  height: 20px;
+}
+.snslink li:last-child a img {
+  width: 18px;
+  height: 16px;
+}
+footer {
+  position: relative;
+  padding: 70px 100px;
+  width: 100%;
+  border-top: 1px solid #dc272d;
+}
+footer .flogo {
+  padding-bottom: 48px;
+}
+footer section {
+  float: left;
+  font-size: 13px;
+  line-height: 25px;
+  color: #5b5b5b;
+}
+footer section strong {
+  color: #000;
+  font-weight: 600;
+}
+address > p span {
+  position: relative;
+}
+address > p > .bar {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+address > p > .bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 11px;
+  background: #cecece;
+  right: 0;
+}
+address .copy {
+  padding: 25px 0 50px;
+  font-size: 12px;
+}
+footer section .inform li {
+  padding-right: 25px;
+  float: left;
+}
+.fnav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fnav .fgnv > li {
+  float: left;
+}
+.depth {
+  padding-top: 25px;
+}
+.depth a {
+  color: #6f6f6f;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "circular std", "Noto Sans KR", sans-serif;
+}
+.Customer {
+  float: right;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5b5b5b;
+}
+.Customer dl > dt + dd {
+  font-size: 30px;
+  padding: 17px 0 13px;
+}
+.Customer dd:last-child a {
+  display: block;
+  width: 196px;
+  height: 41px;
+  margin: 21px 0 142px;
+  border: 1px solid #dc272d;
+  border-radius: 26px;
+  text-align: center;
+  line-height: 41px;
+  transition: all 0.4s;
+}
+.Customer dd:last-child a:hover {
+  background: #dc272d;
+  color: #fff;
+}
+.Customer .sns_Icon li {
+  margin-right: 25px;
+  float: left;
+}
+.Customer .sns_Icon li img {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
